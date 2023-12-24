@@ -64,7 +64,7 @@ jobs:
           command: |
             export NVM_DIR=/home/ubuntu/.nvm
             source /home/ubuntu/.nvm/nvm.sh
-            cd /home/ubuntu/ass3/
+            cd /home/ubuntu/Work/ass3/
             killall node
             # git pull
             echo "1"
