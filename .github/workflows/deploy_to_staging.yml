@@ -42,10 +42,12 @@ jobs:
       
       # - name: Code Analysis/Linting
         # run: npm run lint
-      - name: installing docker
-        run: |
-          brew install docker
-          colima start
+      - uses: docker-practice/actions-setup-docker@master
+        timeout-minutes: 12
+      - run: |
+          set -x
+          docker version
+          docker run --rm hello-world
       
       # Deploy All Changes To The Staging Server
       # - name: Deploy To Changes To Staging Server
