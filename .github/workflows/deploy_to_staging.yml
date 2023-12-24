@@ -68,6 +68,7 @@ jobs:
             killall node
             # git pull
             echo "1"
+            pwd
             docker-compose down
             docker-compose up -d
             
