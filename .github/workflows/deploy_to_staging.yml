@@ -33,12 +33,12 @@ jobs:
       - name: Build Project
         run:  |
           cd devapp
-          npm run build-react
+          npm run build
 
       - name: Unit Testing
         run:  |
           cd devapp
-          npm test-react
+          npm test
 
       # - name: Code Analysis/Linting
         # run: npm run lint
@@ -49,7 +49,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: ./*
-          remote_path: ~/Work/ass3/devop_assignment2_app/
+          remote_path: ~/Work/deploying_ass3/
           remote_host: 3.84.5.63
           remote_user: ubuntu
           remote_key: ${{ secrets.EC2_STAGING_SERVER_SSH_ACCESS_3 }}
