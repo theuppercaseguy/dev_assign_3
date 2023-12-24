@@ -40,7 +40,7 @@ jobs:
           cd devapp
           npm test-react
 
-      - name: Code Analysis/Linting
+      # - name: Code Analysis/Linting
         # run: npm run lint
 
       # Deploy All Changes To The Staging Server
